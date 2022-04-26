@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Space Mono', monospace;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+/********************
+start header style
+*********************/
+/* icon menu */
+.icomenu {
+    display: none;
+}
+header {
+    height: 70vh;
+    background-image: url('/images/desktop/image-hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 5rem;
+}
+.container{
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ padding: 4rem 2rem;
+ margin-bottom: 2rem;
+}
+.container .nav-bar ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.container .nav-bar ul a {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+.container .nav-bar ul a:hover,
+.container .nav-bar ul a:focus {
+    border-bottom: 2px solid white;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 2rem;
+    position: relative;
+    
+ 
+}
+
+.main h1 {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.918);
+    border: 1px solid rgba(255, 255, 255, 0.61);
+    width: 35rem;
+    font-size: 2.8rem;
+    padding: 1.9rem 2rem;
+    height: 16rem;
+    letter-spacing: 6px;
+    font-weight: 800;
+    left: 18%;
+}
+/*********************
+first section
+*********************/
+.first-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    background-color: rgb(255, 254, 254);
+    position: relative;
+    width: 990px;
+    height: 45rem ;
+    padding: 1rem 5rem;
+    margin-bottom: 1rem;
+}
+.first-section .img-box{
+    background-image: url("/images/desktop/image-interactive.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    
+    
+}
+.first-section .text-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem 3rem;
+    z-index: 777;
+    background-color: hsl(0,0,100);
+   
+}
+.first-section .text-box h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  
+}
+.first-section .text-box p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: capitalize; 
+    color: hsl(96, 3%, 71%);
+    background-color: hsl(0,0,100);
+}
+
+/************************
+div main creat
+**************************/
+ .creat{
+    margin: 137px 0 40px;
+    padding: 2rem;
+ }
+
+.creat h3 {
+    font-size: 4rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.creat button {
+    padding: 1rem 2rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: all 1s;
+}
+.creat button:hover,
+.creat button:focus {
+    background-color: white;
+    color: black;
+}
+/*********************
+GRid images
+*********************/
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    padding: 1rem 3rem;
+}
+.grid div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 255px;
+    height: 450px;
+    padding-bottom: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    cursor: pointer;
+}
+.grid div:hover,
+.grid div:focus {
+    opacity: .6;
+}
+.grid div h4 {
+   color: white;
+   font-size: 2.8rem;
+   font-weight: 400;
+   text-transform: uppercase;
+}
+.grid .one{
+background-image: url("/images/desktop/image-curiosity.jpg");
+}
+.grid .two{
+background-image: url("/images/desktop/image-deep-earth.jpg") ;
+}
+.grid .three{
+background-image: url("/images/desktop/image-fisheye.jpg") ;
+}
+.grid .four{
+    background-image: url("/images/desktop/image-from-above.jpg");
+}
+.grid .five{
+    background-image: url("/images/desktop/image-grid.jpg");
+}
+.grid .six{
+    background-image:url("/images/desktop/image-night-arcade.jpg");
+}
+.grid .seven{
+    background-image: url("/images/desktop/image-pocket-borealis.jpg");
+}
+.grid .eight{
+    background-image:url("/images/desktop/image-soccer-team.jpg");
+}
+/*********************
+foooter
+*********************/
+footer {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+}
+.logo-na {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+.ico {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+.ico .icons img {
+    margin-left: 1rem;
+}
